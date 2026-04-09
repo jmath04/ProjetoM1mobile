@@ -41,9 +41,10 @@ public class Login extends AppCompatActivity {
         for (User u : usuarios) {
             if (u.username.equals(user) && u.senha.equals(senha)) {
 
-                Intent i = new Intent(this, Main.class);
+                Intent i = new Intent(this, HorasActivity.class);
                 i.putExtra("usuario", u);
                 startActivity(i);
+                finish(); // Opcional: encerra a tela de login
                 return;
             }
         }

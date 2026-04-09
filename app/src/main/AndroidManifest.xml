@@ -25,5 +25,10 @@
             android:name=".Main"
             android:exported="false" />
 
+        <activity
+            android:name=".HorasActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
     </application>
 </manifest>

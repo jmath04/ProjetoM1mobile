@@ -22,11 +22,10 @@ public class Main extends AppCompatActivity {
 
         User u = (User) getIntent().getSerializableExtra("usuario");
 
-        if (u != null) {
-            tvNome.setText("Nome: " + u.nomeCompleto);
-            tvMatricula.setText("Matrícula: " + u.matricula);
-            tvLotacao.setText("Lotação: " + u.lotacao);
-            tvFuncao.setText("Função: " + u.funcao);
-        }
+        tvNome.setText("Nome: " + u.nomeCompleto);
+        tvMatricula.setText("Matrícula: " + u.matricula);
+        tvLotacao.setText("Lotação: " + u.lotacao);
+        tvFuncao.setText("Função: " + u.funcao);
+
     }
 }

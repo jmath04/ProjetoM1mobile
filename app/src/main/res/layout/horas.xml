@@ -8,18 +8,18 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:background="@android:color/holo_blue_dark">
+        android:background="@android:color/holo_blue_dark"
+        android:padding="16dp">
 
         <TextView
             android:id="@+id/tvMatriculaLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Matrícula: "
-            android:textStyle="bold"
             android:textColor="@android:color/white"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/tvMatricula"
@@ -27,71 +27,71 @@
             android:layout_height="wrap_content"
             android:text=""
             android:textColor="@android:color/white"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toEndOf="@id/tvMatriculaLabel" />
+            app:layout_constraintStart_toEndOf="@id/tvMatriculaLabel"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/tvNomeLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:text="Nome: "
-            android:textStyle="bold"
             android:textColor="@android:color/white"
-            app:layout_constraintTop_toBottomOf="@id/tvMatriculaLabel"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="8dp" />
+            app:layout_constraintTop_toBottomOf="@id/tvMatriculaLabel" />
 
         <TextView
             android:id="@+id/tvNome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:text=""
             android:textColor="@android:color/white"
-            app:layout_constraintTop_toBottomOf="@id/tvMatricula"
             app:layout_constraintStart_toEndOf="@id/tvNomeLabel"
-            android:layout_marginTop="8dp" />
+            app:layout_constraintTop_toBottomOf="@id/tvMatricula" />
 
         <TextView
             android:id="@+id/tvLotacaoLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:text="Lotação: "
-            android:textStyle="bold"
             android:textColor="@android:color/white"
-            app:layout_constraintTop_toBottomOf="@id/tvNomeLabel"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="8dp" />
+            app:layout_constraintTop_toBottomOf="@id/tvNomeLabel" />
 
         <TextView
             android:id="@+id/tvLotacao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:text=""
             android:textColor="@android:color/white"
-            app:layout_constraintTop_toBottomOf="@id/tvNome"
             app:layout_constraintStart_toEndOf="@id/tvLotacaoLabel"
-            android:layout_marginTop="8dp" />
+            app:layout_constraintTop_toBottomOf="@id/tvNome" />
 
         <TextView
             android:id="@+id/tvFuncaoLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:text="Função: "
-            android:textStyle="bold"
             android:textColor="@android:color/white"
-            app:layout_constraintTop_toBottomOf="@id/tvLotacaoLabel"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="8dp" />
+            app:layout_constraintTop_toBottomOf="@id/tvLotacaoLabel" />
 
         <TextView
             android:id="@+id/tvFuncao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:text=""
             android:textColor="@android:color/white"
-            app:layout_constraintTop_toBottomOf="@id/tvLotacao"
             app:layout_constraintStart_toEndOf="@id/tvFuncaoLabel"
-            android:layout_marginTop="8dp" />
+            app:layout_constraintTop_toBottomOf="@id/tvLotacao" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
